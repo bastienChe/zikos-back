@@ -7,7 +7,7 @@ def hello():
     return Response("OKIDOKI", status=200, mimetype='application/json')      
 
 
-app.run()
+app.run(host='0.0.0.0')
 
 # application = flask.Flask(__name__)
 
