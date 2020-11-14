@@ -1,14 +1,14 @@
 from flask import Flask, request, Response
 
-app = Flask(__name__)
-app.debug = True
+application = Flask(__name__)
+application .debug = True
 
-@app.route('/', methods=['GET'])
+@application .route('/', methods=['GET'])
 def hello():
     return Response("OKIOKI", status=200, mimetype='application/json')      
 
 if __name__ == '__main__':
-    app.run()
+    application .run()
 
 # application = flask.Flask(__name__)
 
