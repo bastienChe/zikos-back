@@ -7,7 +7,8 @@ def hello():
     return Response("OKIDOKI", status=200, mimetype='application/json')      
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+	app.debug = True
+	app.run(host='0.0.0.0')
 
 # application = flask.Flask(__name__)
 
