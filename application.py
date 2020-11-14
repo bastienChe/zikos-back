@@ -1,11 +1,19 @@
-import flask
-from flask import request, Response
+from flask import Flask, request, Response
 
-application = flask.Flask(__name__)
+app = Flask(__name__)
 
-@application.route('/')
+@app.route('/')
 def hello():
     return Response("OKIDOKI", status=200, mimetype='application/json')      
+
+
+app.run()
+
+# application = flask.Flask(__name__)
+
+# @application.route('/')
+# def hello():
+#     return Response("OKIDOKI", status=200, mimetype='application/json')      
  
-if __name__ == '__main__':
-    application.run(host='0.0.0.0')
+# if __name__ == '__main__':
+#     application.run(host='0.0.0.0')
