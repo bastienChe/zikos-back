@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return Response("OKIDOKI", status=200, mimetype='application/json')      
+    return Response("OKIOKI", status=200, mimetype='application/json')      
 
 if __name__ == '__main__':
 	app.debug = True
